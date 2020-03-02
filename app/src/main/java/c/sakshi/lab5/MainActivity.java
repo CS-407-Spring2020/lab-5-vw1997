@@ -10,11 +10,11 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-
+    public static String usernameKey = "username";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        String usernameKey = "username";
+
         SharedPreferences sharedPreferences = getSharedPreferences("c.sakshi.lab5", Context.MODE_PRIVATE);
 
         if (!sharedPreferences.getString(usernameKey,"").equals("")) {
